@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "𝗣𝗔𝗣𝗜𝗟𝗟𝗢𝗡| 𓅯";
+const doNotDelete = "Kyơ Soɱa| 𝐉𝐨𝐧𝐚𝐭𝐡𝐚𝐧 𝐀𝐢 [𓅯]";
 /** 
 * @author NTKhang
 * @author: do not delete it
@@ -43,7 +43,7 @@ module.exports = {
 
   langs: {
     vi: {
-      help: "╭─────────────✿\n𝗔𝗞𝗨𝗠𝗔𝗧𝗜𝗦𝗔𝗧𝗜𝗢𝗡| 🧋✨ \n├─────⭔\n│ Trang [ %2/%3 ]\n│ Hiện tại bot có %4 lệnh có thể sử dụng\n│ » Gõ %5help <số trang> để xem danh sách các lệnh\n│ » Gõ %5help để xem chi tiết cách sử dụng lệnh đó\n├────────❀\n│ %6\n╰─────────────✿",
+      help: "╭─────────────✿\n𝙅𝙊𝙉𝘼𝙏𝙃𝘼𝙉'𝙎 𝘾𝙈𝘿𝙎| 🧋✨ \n├─────⭔\n│ Trang [ %2/%3 ]\n│ Hiện tại bot có %4 lệnh có thể sử dụng\n│ » Gõ %5help <số trang> để xem danh sách các lệnh\n│ » Gõ %5help để xem chi tiết cách sử dụng lệnh đó\n├────────❀\n│ %6\n╰─────────────✿",
       attechment:fs.createReadStream("anjarara.jpg"),
       help2: "%1├───────❀\n│ » Hiện tại bot có %2 lệnh có thể sử dụng\n│ » Gõ %3help <tên lệnh> để xem chi tiết cách sử dụng lệnh đó\n│ %4\n╰─────────────✿",
       commandNotFound: "Lệnh \"%1\" không tồn tại",
@@ -140,7 +140,7 @@ module.exports = {
     }
 
     const categoryName = value.config.category || "No Category";
-    const circularSymbol = "\n➮┅❍"; // Add your desired circular symbol here
+    const circularSymbol = "\n❍"; // Add your desired circular symbol here
 
     if (!categoryCommands.has(categoryName)) {
  categoryCommands.set(categoryName, []);
@@ -150,7 +150,7 @@ module.exports = {
   }
 
   for (const [category, commands] of categoryCommands) {
-    msg += `》✨─➬[${category}]┉☄✨\n▣「${commands.join(" ")}」\n\n`;
+    msg += `》🎉─➬[${category}]┉☄🎉\n▣「${commands.join(" ")}」\n\n`;
   }
 
   message.reply(getLang("help2", msg, commands.size, prefix, doNotDelete));
